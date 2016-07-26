@@ -127,3 +127,69 @@ table#productDetails {
   padding-top: 1.5rem;
 }
 /* css for media queries for responsiveness */
+@media screen and (min-width: 1024px) {
+  .revenue {
+    width: 35%;
+  }
+  #chart-js {
+    width: 700px;
+    height: auto;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .revenue {
+    width: 70%;
+  }
+  #chart-js {
+    height: auto;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 479px) {
+  #container {
+    width: 100%;
+    padding: 0;
+  }
+  #container-body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .revenue {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #chart-js {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+  }
+  canvas {
+    width: 100% !important;
+    max-width: 800px;
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+  }
+  #product {
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

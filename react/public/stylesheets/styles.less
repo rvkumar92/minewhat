@@ -133,3 +133,71 @@ table#productDetails{
 }
 
 /* css for media queries for responsiveness */
+@media screen and (min-width: 1024px){
+  .revenue{
+    width: 35%;
+  }
+  #chart-js{
+    width: 700px;
+    height: auto;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width : 480px) and (max-width: 1023px){
+  .revenue{
+    width: 70%;
+  }
+  #chart-js{
+    height: auto;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  .card{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 479px){
+  #container{
+    width: @full-width;
+    padding: 0;
+  }
+  #container-body{
+    width: @full-width;
+    padding: 0;
+    margin: 0;
+  }
+  .revenue{
+    width: @full-width;
+    padding: 0;
+    margin: 0;
+  }
+  #chart-js{
+    padding: 0;
+    margin: 0;
+    width: @full-width;
+    height: 50%;
+  }
+  canvas{
+    width: @full-width !important;
+    max-width: 800px;
+    padding: 0;
+    margin: 0;
+  }
+  img{
+    width: @full-width;
+  }
+  #product{
+    padding: 0;
+    margin: 0;
+  }
+  .card{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
