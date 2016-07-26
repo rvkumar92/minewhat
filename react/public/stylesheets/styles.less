@@ -1,0 +1,135 @@
+@bg-red: red;
+@bg-grey: #f6f6f6;
+@white: #FFF;
+@font: sans-serif;
+@lightGrey: #939393;
+@color-eee: #eee;
+@full-width: 100%;
+.container{
+  width: @full-width;
+  font-family: @font;
+}
+#container-body{
+  width: @full-width;
+  position: relative;
+}
+.first-header{
+  background-color: @bg-red;
+  color:@white;
+  padding: 1px;
+  font-weight: 100;
+}
+.second-header{
+  background-color: @bg-grey;
+  color: @lightGrey;
+  padding: 1px;
+  font-weight: 100;
+}
+h4{
+  margin-left: 1.5rem;
+  font-family: @font;
+  font-weight: 100;
+}
+.revenue{
+  width: 35%;
+}
+table#revenue-table{
+  width: @full-width;
+  border-collapse: collapse;
+  background: @color-eee;
+  color: #000;
+  text-rendering: optimizeLegibility;
+  border-radius: 5px;
+  float: left;
+}
+table#revenue-table thead th, table#revenue-table tbody td{
+  padding: .5rem;
+}
+table#revenue-table thead th{
+  text-align: left;
+}
+table#revenue-table tbody td{
+  padding: 1rem;
+  color: #444;
+  background: #f9f9f9;
+  color: @lightGrey;
+}
+table#revenue-table tbody tr:not(:last-child){
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.caption{
+  color: #c9c9c9;
+  font-weight: 400;
+  font-size: 14px;
+}
+#chart-js{
+  width: 700px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+#product{
+  clear: both;
+}
+.card{
+  margin-bottom: 20px;
+  border: 3px solid black;
+  border-radius: 4px;
+  border-color: #ddd;
+  width: 21%;
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+.card > .card-head{
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.card > .card-body{
+  background-image: url('../images/tile-bg.png');
+  border-top-style: outset;
+  padding: 0 .5rem;
+}
+img{
+  width: @full-width;
+}
+.badge{
+  position: absolute;
+  font-size: 16px;
+  top: 1.5rem;
+  left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: @color-eee;
+}
+figcaption,bdi{
+  padding-left: 1rem;
+}
+.color{
+  color: @lightGrey;
+}
+.pull-right{
+  float: right;
+}
+.pull-center{
+  margin: 0 50%;
+}
+table#productDetails{
+  width: @full-width;
+}
+#container-body{
+  margin-left: 1.5rem;
+}
+#product{
+  padding-top: 1.5rem;
+}
+
+/* css for media queries for responsiveness */
