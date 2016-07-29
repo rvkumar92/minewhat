@@ -27,14 +27,14 @@ gulp.task('build',function(){
     .pipe(gulp.dest('public/dist/js'));
 });
 
-gulp.task('watch-css',function(){
-  gulp.watch('public/stylesheets/*.*',['compile-less']);
-});
+// gulp.task('watch-css',function(){
+//   gulp.watch('public/stylesheets/*.*',['compile-less']);
+// });
 
-gulp.task('watch',function(){
-  gulp.watch('public/javascripts/*/*.*',['build']);
-});
+// gulp.task('watch',function(){
+//   gulp.watch('public/javascripts/*/*.*',['build']);
+// });
 
 gulp.task('default',function(cb){
-  runSequence('compile-less','build','watch-css','watch',cb);
+  runSequence('compile-less','build',cb);
 })
