@@ -11,17 +11,16 @@ gulp.task('compile-less',function(){
   .pipe(gulp.dest('./public/dist/css/'));
 });
 
-// gulp.task('copy',function(){
-//
-// })
-
 gulp.task('build',function(){
   return browserify({
     entries: 'public/javascripts/main.js',
     extensions: ['.jsx'],
     debug: true
   })
-    .transform(babelify,{presets:['es2015','react']})
+    .transform(babelify,{
+      "presets": ["stage-1","stage-2","es2015","react"],
+      "plugins": ["transform-decorators-legacy","transform-class-properties"]
+    })
     .bundle()
     .pipe(source('main.js'))
     .pipe(gulp.dest('public/dist/js'));
@@ -32,7 +31,7 @@ gulp.task('build',function(){
 // });
 
 // gulp.task('watch',function(){
-//   gulp.watch('public/javascripts/*/*.*',['build']);
+//   gulp.watch('public/javascripts/*/*.*',['default']);
 // });
 
 gulp.task('default',function(cb){

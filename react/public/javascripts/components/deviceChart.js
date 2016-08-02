@@ -39,7 +39,6 @@ class DeviceChart extends Component{
     });
   }
   render(){
-    console.log('hello');
     return(
       <aside id="chart-js">
         <canvas id="myChart"></canvas>

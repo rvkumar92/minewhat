@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import lodash from 'lodash';
+import {observer} from 'mobx-react';
+
+@observer
 class TopProducts extends Component{
   constructor(props){
     super(props);
-    this.state = {
-      productData : getProductData()
-    }
   }
   render(){
     var products = lodash.times(4,(index)=>{
@@ -21,7 +21,7 @@ class TopProducts extends Component{
               <table id="productDetails">
                 <tbody>
                   {
-                    this.state.productData.data.map((data,index)=>{
+                    this.props.productData.data.map((data,index)=>{
                       return(
                         <tr key={index}>
                           <td className="color">{data.words}</td>
